@@ -17,6 +17,7 @@ jobs:
           root: workspace
           paths:
             - mongo.tar
+            
 workflows:
   scan-image:
     jobs:
