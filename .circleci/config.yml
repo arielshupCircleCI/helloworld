@@ -4,7 +4,7 @@
 
 version: 2.1
 orbs:
-  portshiftscanner: 'moriya/scanner-orb@0.0.37'
+  portshiftscanner: 'portshift/portshift-scanner@2.0.0'
 jobs:
   docker-build:
     machine: true
@@ -24,9 +24,9 @@ workflows:
       - portshiftscanner/scan-image:
           requires:
             - docker-build
-          context: blabla
-          image_name: 'registry.gitlab.com/portshift/portshift/vault'
-          image_tag: '0.10.1'
-          highest_severity_allowed: 'LOW'
-          portshift_server: 'moriyaiv.demo.portshift.co' 
+          context: Portshift_context
+          image_name: 'mongo'
+          image_tag: 'latest'
+          highest_severity_allowed: 'HIGH'
+          portshift_server: 'arielsh.demo.portshift.co' 
 
