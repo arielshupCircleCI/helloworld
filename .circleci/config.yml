@@ -11,7 +11,7 @@ workflows:
     jobs:
       - portshiftscanner/scan-image:
           context: Portshift
-          image_name: 'mongo'
+          image_name: 'redis'
           image_tag: 'latest'
           highest_severity_allowed: 'HIGH'
           portshift_server: 'arielsh.demo.portshift.co' 
