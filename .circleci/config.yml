@@ -10,7 +10,7 @@ workflows:
   scan-image:
     jobs:
       - portshiftscanner/scan-image:
-          context: Portshift
+          context: Portshift Access
           image_name: 'redis'
           image_tag: 'latest'
           highest_severity_allowed: 'HIGH'
