@@ -5,13 +5,13 @@
 
 version: 2.1
 orbs:
-  portshiftscanner: 'portshift/portshift-scanner@2.0.1'
+  portshiftscanner: 'portshift/portshift-scanner@2.1.1'
 workflows:
   scan-image:
     jobs:
       - portshiftscanner/scan-image:
           context: Portshift Access
-          image_name: 'mongo'
+          image_name: 'postgres'
           image_tag: 'latest'
           highest_severity_allowed: 'MEDIUM'
           portshift_server: 'arielsh.demo.portshift.co' 
