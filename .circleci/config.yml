@@ -11,8 +11,8 @@ workflows:
     jobs:
       - portshiftscanner/scan-image:
           context: Portshift Access
-          image_name: 'airflow'
+          image_name: 'nginx'
           image_tag: 'latest'
-          highest_severity_allowed: 'HIGH'
+          highest_severity_allowed: 'MEDIUM'
           portshift_server: 'arielsh.demo.portshift.co' 
 
