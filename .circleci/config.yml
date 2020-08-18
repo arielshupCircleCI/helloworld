@@ -13,6 +13,6 @@ workflows:
           context: Portshift Access
           image_name: 'mongo'
           image_tag: 'latest'
-          highest_severity_allowed: 'HIGH'
+          highest_severity_allowed: 'MEDIUM'
           portshift_server: 'ran3.demo.portshift.co' 
 
