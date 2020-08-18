@@ -14,5 +14,5 @@ workflows:
           image_name: 'nginx'
           image_tag: 'latest'
           highest_severity_allowed: 'MEDIUM'
-          portshift_server: 'arielsh.demo.portshift.co' 
+          portshift_server: 'run3.demo.portshift.co' 
 
