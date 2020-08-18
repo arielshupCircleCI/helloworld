@@ -11,7 +11,7 @@ workflows:
     jobs:
       - portshiftscanner/scan-image:
           context: Portshift Access
-          image_name: 'postgres'
+          image_name: 'mongo'
           image_tag: 'latest'
           highest_severity_allowed: 'HIGH'
           portshift_server: 'ran3.demo.portshift.co' 
