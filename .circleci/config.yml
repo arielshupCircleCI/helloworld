@@ -11,8 +11,8 @@ workflows:
     jobs:
       - portshiftscanner/scan-image:
           context: Portshift Access
-          image_name: 'alpine'
+          image_name: 'redis'
           image_tag: 'latest'
-          highest_severity_allowed: 'MEDIUM'
+          highest_severity_allowed: 'HIGH'
           portshift_server: 'ran3.demo.portshift.co' 
 
